@@ -1,0 +1,46 @@
+@media screen and (min-width: 875px) 
+	.main
+		font-size: 11px
+	.card
+		display: flex
+		max-width: none
+		width: 610px
+		overflow: inherit
+		&__image
+			height: auto
+			width: 100%
+			&-drawers
+				object-position: 0
+				border-radius: 7px 0 0 7px
+		&__body
+			&-text
+				padding: 0
+				margin: 10px 30px
+		&__text
+			margin: 0
+			line-height: 1.2rem
+			letter-spacing: 0
+		&__footer
+			padding: 0
+			margin: 0 35px 20px 35px
+
+		&__info-avatar
+			height: 35px
+
+		&__share
+			justify-content: center
+			width: auto
+			border-radius: 10px
+			padding: 12px 35px
+			font-size: 13px
+			top: -170%
+			left: 55%
+			box-shadow: 0px 15px 10px -6px rgba(0,0,0,0.1)
+		&__share::before
+			content: ""
+			border-top: $dark-grayish-blue 12px solid
+			border-right: transparent 12px solid
+			border-left: transparent 12px solid
+			position: absolute
+			bottom: -12px
+			z-index: 100
